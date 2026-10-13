@@ -23,7 +23,7 @@ html p{
 header{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
     background-size: cover;
-    height:100vh;
+    height:50vh;
     background-attachment: fixed;
 }
 .hero p{
@@ -104,8 +104,6 @@ header{
     max-height: auto;
     
 }
-.cities p {
-}
 ul{
     list-style-type: none;
 }
@@ -118,6 +116,8 @@ section {
     background-size: cover;
     height:50vh;
     background-attachment: fixed;
+<<<<<<< HEAD
+=======
 =======
 }   
 .header{
@@ -125,6 +125,7 @@ section {
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+>>>>>>> 5bc2e78a23152800d048fd9b363f2d11d432fd60
 }
 .row{
     max-width: 1140;
@@ -170,5 +171,9 @@ a:hover{
 }
 
 .article .how-it-works{
+<<<<<<< HEAD
+    background-color: #f4f;
+=======
     background-color: #f4f4f4;
+>>>>>>> 5bc2e78a23152800d048fd9b363f2d11d432fd60
 }
