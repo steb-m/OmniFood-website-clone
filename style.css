@@ -45,3 +45,19 @@ a:hover{
     text-decoration: underline;
     text-decoration-color: orange;
 }
+.app-screen{
+    display: block;
+    height: 400px;
+    margin:auto;
+    float: left;
+}
+
+.how-it-works h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.article .how-it-works{
+    background-color: #f4f4f4;
+}
