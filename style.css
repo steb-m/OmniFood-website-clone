@@ -9,6 +9,8 @@ nav{
 }
 html{
     color: #555;
+}
+html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -116,4 +118,57 @@ section {
     background-size: cover;
     height:50vh;
     background-attachment: fixed;
+=======
+}   
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.row{
+    max-width: 1140;
+    margin: 0 auto;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.logo{
+    height: 100px;
+    margin: auto;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+.app-screen{
+    display: block;
+    height: 400px;
+    margin:auto;
+    float: left;
+}
+
+.how-it-works h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.article .how-it-works{
+    background-color: #f4f4f4;
 }
