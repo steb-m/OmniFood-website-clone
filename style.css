@@ -20,14 +20,19 @@ html{
     margin: 0 auto;
 }
 .main-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    text-decoration: none;
+    float: right;
     list-style: none;
+    margin-top: 30px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-decoration: none;
 }
 .logo{
     height: 100px;
-    margin:auto;
+    margin: auto;
+    margin-left: 300px;
+    margin-top: 30px;
 }
