@@ -2,12 +2,123 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    position: fixed;
+}
+html{
+    color: #555;
 }
 html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+} 
+html p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
+    background-size: cover;
+    height:100vh;
+    background-attachment: fixed;
+}
+.hero p{
+    color:white;
+    font-size: 240%;
+    font-family: 'Lato', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero .btn-full{
+    background-color: #e67e22;
+    color:white;
+    border:none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+.hero .btn-ghost{
+    background-color: rgb(255, 255, 255, 0.0);
+    color:#e67e22;
+    border:2px solid #e67e22;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+.buttons{
+    margin-top: 20px;
+    display:flex;
+    gap:20px;
+}
+.hero {
+    scale:1.2;
+    position: absolute;
+    top:52%;
+    left:40%;
+    transform: translate(-50%, -50%);
+}
+.content{
+    width: 80%;
+    margin: 75px auto;
+    text-align: center;
+}
+.content .headerText{
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.content hr {
+    color:#e67e22;
+}
+.flexbox-container{
+    display:flex;
+    margin-top: 20px;
+    gap: 50px;
+    flex-direction: row;
+    padding: 20px;
+}
+.images{
+    display:flex;
+    justify-content: center;
+}
+.images img{
+    max-width: 25%;
+    max-height: auto;
+    opacity: 0.6;
+}
+.images img:hover{
+    display:flex;
+    justify-content: center;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+.cities img{  
+    max-width: 100%;
+    max-height: auto;
+    
+}
+.cities p {
+}
+ul{
+    list-style-type: none;
+}
+a {
+    color:orange;
+}
+section {
+    padding: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
+    background-size: cover;
+    height:50vh;
+    background-attachment: fixed;
+=======
 }   
 .header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
