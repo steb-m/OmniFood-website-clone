@@ -112,6 +112,10 @@ a:hover {
     align-items: center;
 }
 
+.content p{
+    margin: 5px auto;
+}
+
 .content .headerText {
     font-size: 180%;
     text-transform: uppercase;
@@ -140,6 +144,11 @@ a:hover {
 .images {
     display: flex;
     justify-content: center;
+}
+
+.ion-icon{
+    width: 50px;
+    height: auto;
 }
 
 .images img {
