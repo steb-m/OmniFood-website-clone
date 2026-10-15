@@ -1,228 +1,236 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
-nav{
+
+nav {
     position: fixed;
 }
-html{
+
+html {
     color: #555;
-}
-html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 } 
-html p, html h1, html h2, html h3, html h4, html h5, html h6{
+
+html p, html h1, html h2, html h3, html h4, html h5, html h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
-h2:after{ /* this targets the little margin-line under the h2 */
-    display: block;
-    height: 2px;
-    width: 100px;
-    background-color: #e67e22;
-    content: " ";
-    margin: auto;
-    margin-top: 30px;
-}
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
     background-size: cover;
-    height:50vh;
+    height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
+
 .hero {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    width: 1140px;
 }
-.hero p{
-    color:white;
+
+.hero p {
+    color: white;
     font-size: 240%;
     font-family: 'Lato', 'sans-serif';
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.hero .btn-full{
+
+.hero .btn-full {
     background-color: #e67e22;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.hero .btn-ghost{
-    background-color: rgb(255, 255, 255, 0.0);
-    color:#e67e22;
-    border:2px solid #e67e22;
+
+.hero .btn-ghost {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #e67e22;
+    border: 2px solid #e67e22;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.buttons{
+
+.buttons {
     margin-top: 20px;
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
-.content{
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.content {
     width: 80%;
     margin: 75px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content.headerText{
-    font-size: 240%;
+
+.content .headerText {
+    font-size: 180%;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
 }
-.content.bodyText{
-    font-size: 180%;
-    line-height: 1.5;
-    margin-top: 20px;
+
+.content hr {
+    width: 100px;
+    border: 1px solid #e67e22;
+    margin: 20px auto;
 }
-.flexbox-container{
+
+.flexbox-container {
     display: flex;
-    justify-content: center;
     margin-top: 20px;
     gap: 50px;
     flex-direction: row;
     padding: 20px;
 }
-.ion-icon{
-    width: 50px;
-    height: auto;
-    margin-bottom: 20px;
+
+.flexbox-item {
+    flex: 1;
 }
-.images{
+
+.images {
     display: flex;
     justify-content: center;
 }
-.images img{
+
+.images img {
     max-width: 25%;
-    max-height: auto;
-    opacity: 0.4;
+    height: auto;
+    opacity: 0.6;
 }
-.images img:hover{
-    display: flex;
-    justify-content: center;
+
+.images img:hover {
     opacity: 1;
-    scale: 1.1;
     transition-duration: 0.5s;
 }
-.cities img{  
-    max-width: 100%;
-    max-height: auto;
-}
-ul{
-    list-style-type: none;
-}
-a {
-    color:orange;
-}
-section {
-    padding: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
-    background-size: cover;
-    height:50vh;
-    background-attachment: fixed;
-}   
-.header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
-    background-size: cover; 
-    height: 100vh;
-    background-attachment: fixed;
-}
-.row{
-    max-width: 1140;
-    margin: 0 auto;
-}
-.main-nav{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.main-nav li{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 50px;
-    text-decoration: none;
-    padding: 10px 0;
-}
-.logo{
-    height: 100px;
-    margin: auto;
-    margin-left: 300px;
-    margin-top: 30px;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-}
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: orange;
-}
-.app-screen{
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
+
+.how-it-works {
+    padding: 60px 0;
 }
 
-.how-it-works h2{
-    margin-top: 100px;
-    margin-bottom: 50px;
+.how-it-works h2 {
     text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 180%;
 }
 
-.article .how-it-works{
-    background-color: #f4f;
+.app-screen {
+    width: 40%;
+    max-width: 200px;
+    float: left;
+    margin-left: 15%;
+    height: auto;
 }
-/* media queries */
-@media (max-width: 768px){
-    .main-nav{
-        float: none;
-        text-align: center;
-        margin-top: 0;
-    }
-    .main-nav li{
-        display: block;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px 0;
-    }
-    .logo{
-        height: 80px;
-        margin-left: 0;
-    }
-    .flexbox-container{
-        flex-wrap: wrap;
-    }
+
+.how-it-works .wrapper {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
 }
-.reviews{
-    height: 75vh;
-}
-.customer{
+
+div.steps {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-top: 20px;
+    text-align: left;
 }
-.reviews .customer img{
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    min-width: 45px;
+    height: 45px;
+    font-size: 120%;
+}
+
+.cities img {  
+    max-width: 100%;
+    height: auto;
+}
+
+.cities .flexbox-item {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cities a {
+    color: orange;
+}
+
+section {
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+} 
+
+.wrapper .reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-image img {
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-}
-.app-screen{
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    width:10%;
+    margin-top: 15px;
 }
