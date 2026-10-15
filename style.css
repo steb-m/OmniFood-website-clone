@@ -1,179 +1,245 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
-nav{
+
+nav {
     position: fixed;
 }
-html{
+
+html {
     color: #555;
-}
-html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 } 
-html p{
+
+html p, html h1, html h2, html h3, html h4, html h5, html h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
     background-size: cover;
-    height:50vh;
+    height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
-.hero p{
-    color:white;
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+}
+
+.hero p {
+    color: white;
     font-size: 240%;
     font-family: 'Lato', 'sans-serif';
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.hero .btn-full{
+
+.hero .btn-full {
     background-color: #e67e22;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.hero .btn-ghost{
-    background-color: rgb(255, 255, 255, 0.0);
-    color:#e67e22;
-    border:2px solid #e67e22;
+
+.hero .btn-ghost {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #e67e22;
+    border: 2px solid #e67e22;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.buttons{
+
+.buttons {
     margin-top: 20px;
-    display:flex;
-    gap:20px;
+    display: flex;
+    gap: 20px;
 }
-.hero {
-    scale:1.2;
-    position: absolute;
-    top:52%;
-    left:40%;
-    transform: translate(-50%, -50%);
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
 }
-.content{
+
+.logo {
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.content {
     width: 80%;
     margin: 75px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content .headerText{
+
+.content p{
+    margin: 5px auto;
+}
+
+.content .headerText {
     font-size: 180%;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
 }
+
 .content hr {
-    color:#e67e22;
+    width: 100px;
+    border: 1px solid #e67e22;
+    margin: 20px auto;
 }
-.flexbox-container{
-    display:flex;
+
+.flexbox-container {
+    display: flex;
     margin-top: 20px;
     gap: 50px;
     flex-direction: row;
     padding: 20px;
 }
-.images{
-    display:flex;
+
+.flexbox-item {
+    flex: 1;
+}
+
+.images {
+    display: flex;
     justify-content: center;
 }
-.images img{
+
+.ion-icon{
+    width: 50px;
+    height: auto;
+}
+
+.images img {
     max-width: 25%;
-    max-height: auto;
+    height: auto;
     opacity: 0.6;
 }
-.images img:hover{
-    display:flex;
-    justify-content: center;
+
+.images img:hover {
     opacity: 1;
     transition-duration: 0.5s;
 }
-.cities img{  
-    max-width: 100%;
-    max-height: auto;
-    
+
+.how-it-works {
+    padding: 60px 0;
 }
-ul{
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 180%;
+}
+
+.app-screen {
+    width: 40%;
+    max-width: 200px;
+    float: left;
+    margin-left: 15%;
+    height: auto;
+}
+
+.how-it-works .wrapper {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+div.steps {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    min-width: 45px;
+    height: 45px;
+    font-size: 120%;
+}
+
+.cities img {  
+    max-width: 100%;
+    height: auto;
+}
+
+.cities .flexbox-item {
+    text-align: left;
+}
+
+ul {
     list-style-type: none;
 }
-a {
-    color:orange;
+
+.cities a {
+    color: orange;
 }
+
 section {
-    padding: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
     background-size: cover;
-    height:50vh;
     background-attachment: fixed;
-<<<<<<< HEAD
-=======
-=======
-}   
-.header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
->>>>>>> 5bc2e78a23152800d048fd9b363f2d11d432fd60
-}
-.row{
-    max-width: 1140;
-    margin: 0 auto;
-}
-.main-nav{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.main-nav li{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 50px;
-    text-decoration: none;
-    padding: 10px 0;
-}
-.logo{
-    height: 100px;
-    margin: auto;
-    margin-left: 300px;
-    margin-top: 30px;
-}
-a{
-    text-decoration: none;
     color: #fff;
-}
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: orange;
-}
-.app-screen{
-    display: block;
-    height: 400px;
-    margin:auto;
-    float: left;
+} 
+
+.wrapper .reviews {
+    display: flex;
+    flex-direction: column;
 }
 
-.how-it-works h2{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.article .how-it-works{
-<<<<<<< HEAD
-    background-color: #f4f;
-=======
-    background-color: #f4f4f4;
->>>>>>> 5bc2e78a23152800d048fd9b363f2d11d432fd60
+.customer-image img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
 }
