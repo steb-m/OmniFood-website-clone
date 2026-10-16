@@ -1,199 +1,455 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
-nav{
+
+nav {
     position: fixed;
 }
-html{
+
+html {
     color: #555;
-}
-html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 } 
-html p{
+
+html p, html h1, html h2, html h3, html h4, html h5, html h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
     background-size: cover;
-    height:100vh;
+    height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
-.hero p{
-    color:white;
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1140px;
+}
+
+.hero p {
+    color: white;
     font-size: 240%;
     font-family: 'Lato', 'sans-serif';
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.hero .btn-full{
+
+.hero .btn-full {
     background-color: #e67e22;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.hero .btn-ghost{
-    background-color: rgb(255, 255, 255, 0.0);
-    color:#e67e22;
-    border:2px solid #e67e22;
+
+.hero .btn-ghost {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #e67e22;
+    border: 2px solid #e67e22;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.buttons{
+
+.buttons {
     margin-top: 20px;
-    display:flex;
-    gap:20px;
+    display: flex;
+    gap: 20px;
 }
-.hero {
-    scale:1.2;
-    position: absolute;
-    top:52%;
-    left:40%;
-    transform: translate(-50%, -50%);
+
+.row {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
 }
-.content{
+
+.logo {
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.content {
     width: 80%;
     margin: 75px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content .headerText{
+
+.content p{
+    margin: 5px auto;
+}
+
+.content .headerText {
     font-size: 180%;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
 }
+
 .content hr {
-    color:#e67e22;
+    width: 100px;
+    border: 1px solid #e67e22;
+    margin: 20px auto;
 }
-.flexbox-container{
-    display:flex;
+
+.flexbox-container {
+    display: flex;
     margin-top: 20px;
     gap: 50px;
     flex-direction: row;
     padding: 20px;
 }
-.images{
-    display:flex;
+
+.flexbox-item {
+    flex: 1;
+}
+
+.images {
+    display: flex;
     justify-content: center;
 }
-.images img{
+
+.ion-icon{
+    width: 50px;
+    height: auto;
+}
+
+.images img {
     max-width: 25%;
-    max-height: auto;
-    opacity: 0.6;
+    height: auto;
+    opacity: 0.7;
 }
-.images img:hover{
-    display:flex;
-    justify-content: center;
+
+.images img:hover {
     opacity: 1;
+    transform: scale(1.02);
     transition-duration: 0.5s;
 }
-.cities img{  
-    max-width: 100%;
-    max-height: auto;
-    
-}
-.cities p {
-}
-ul{
-    list-style-type: none;
-}
-a {
-    color:orange;
-}
-section {
-    padding: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
-    background-size: cover;
-    height:50vh;
-    background-attachment: fixed;
-=======
-}   
-.header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Omnifood Contents/Omnifood Contents/hero.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-}
-.row{
-    max-width: 1140;
-    margin: 0 auto;
-}
-.main-nav{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.main-nav li{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 50px;
-    text-decoration: none;
-    padding: 10px 0;
-}
-.logo{
-    height: 100px;
-    margin: auto;
-    margin-left: 300px;
-    margin-top: 30px;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-}
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: orange;
-}
-.app-screen{
-    width: 40%;
-    display: block;
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
 
+.how-it-works {
+    padding: 60px 0;
 }
 
-.how-it-works h2{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-div.steps{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    float: right;
-}
-.steps p{
-    display: block;
-    margin-block-start: 16px;
-    margin-block-end: 16px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.article .how-it-works{
-    background-color: #f4f4f4;
-}
-
-.how-it-works h2{
+.how-it-works h2 {
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
     font-size: 180%;
 }
 
+.app-screen {
+    width: 40%;
+    max-width: 200px;
+    float: left;
+    margin-left: 15%;
+    height: auto;
+}
+
+.how-it-works .wrapper {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+div.steps {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    min-width: 45px;
+    height: 45px;
+    font-size: 120%;
+}
+
+.cities img {  
+    max-width: 100%;
+    height: auto;
+}
+
+.cities .flexbox-item {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cities a {
+    color: orange;
+}
+
+section {
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Omnifood Contents/Omnifood Contents/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+} 
+
+.wrapper .reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-image img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+.pricing-section{
+    background-color: #f4f4f4;
+    background-image: none;
+    transform: scale(1.3);
+}
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #d1d5db;
+    font-size: 1.8rem;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #d35400;
+    margin: 14px auto 0 auto;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1050px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: black;
+    border-radius: 4px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    padding: 24px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.card-header h3 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.price .amount {
+    font-size: 2.8rem;
+    font-weight: 200;
+    color: #cf6d17;
+}
+
+.price .unit {
+    font-size: 0.85rem;
+    color: #888;
+    margin-left: 4px;
+}
+
+.sub-price {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.features {
+    list-style: none;
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.features li {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features li.included::before {
+    content: "✓";
+    color: #cf6d17;
+    font-size: 0.9rem;
+    }
+
+.features li.excluded::before {
+    content: "✕";
+    color: #cf6d17;
+    font-size: 0.8rem;
+}
+
+
+.card-footer {
+    padding: 24px;
+    text-align: center;
+    border-top: 1px solid #2f2f2f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #b84300;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #cf6d17;
+    color: #cf6d17;
+}
+
+.btn-outline:hover {
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 180%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .main-nav {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .images img {
+        flex: 1 1 50%;
+    }
+
+    .how-it-works .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.steps {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero p {
+        font-size: 150%;
+    }
+
+    .main-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .images img {
+        flex: 1 1 100%;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
 .step-number{
     text-align: center;
     display: inline-block;
@@ -202,4 +458,68 @@ div.steps{
     border-radius: 50%;
     width: 30px;
     height: 30px;
+}
+
+.text{
+    color:black;
+    border: 0.5px solid black;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor:text;
+}
+
+.email{
+    color:black;
+    border: 0.5px solid black;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor:text;
+}
+.select{
+    width: auto;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.maps{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    height: 560px;
+}
+section.container{
+    width: 100%
+    
+}
+.signupbox{
+    height: 500px;
+    padding-top:40px;
+    position: absolute;
+    width: 50%;
+    background-color: whitesmoke;
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
 }
