@@ -34,7 +34,8 @@ html p, html h1, html h2, html h3, html h4, html h5, html h6 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1140px;
+    width: 90%;
+    max-width: 1140px;
 }
 
 .hero p {
@@ -73,6 +74,7 @@ html p, html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .row {
     max-width: 1140px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -154,11 +156,12 @@ a:hover {
 .images img {
     max-width: 25%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .images img:hover {
     opacity: 1;
+    transform: scale(1.02);
     transition-duration: 0.5s;
 }
 
@@ -242,4 +245,249 @@ section {
     width: 50px;
     height: 50px;
     margin-top: 15px;
+}
+.pricing-section{
+    background-color: #f4f4f4;
+    background-image: none;
+    transform: scale(1.15);
+}
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #d1d5db;
+    font-size: 1.8rem;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #d35400;
+    margin: 14px auto 0 auto;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1050px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: black;
+    border-radius: 4px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    padding: 24px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.card-header h3 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.price .amount {
+    font-size: 2.8rem;
+    font-weight: 200;
+    color: #cf6d17;
+}
+
+.price .unit {
+    font-size: 0.85rem;
+    color: #888;
+    margin-left: 4px;
+}
+
+.sub-price {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.features {
+    list-style: none;
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.features li {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features li.included::before {
+    content: "✓";
+    color: #cf6d17;
+    font-size: 0.9rem;
+    }
+
+.features li.excluded::before {
+    content: "✕";
+    color: #cf6d17;
+    font-size: 0.8rem;
+}
+
+
+.card-footer {
+    padding: 24px;
+    text-align: center;
+    border-top: 1px solid #2f2f2f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #b84300;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #cf6d17;
+    color: #cf6d17;
+}
+
+.btn-outline:hover {
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+section.map {
+    position:relative;
+    height:100vh;
+    background: none;
+}
+div.map{
+    height:75vh;
+    width:100vh;
+    z-index: 0;
+    margin: 0 auto;
+}
+div.survey .flexbox-container{
+    display:flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #f4f4f4;
+}
+
+footer{
+    background-color: #f4f4f4;
+    height: fit-content;
+}
+
+div.footer ul{
+    display: flex;
+    flex-direction: row;
+    gap:29px;
+    padding-left: 240px;
+    padding-top: 72px;
+}
+
+
+div.footer h4{
+    text-align: center;
+}
+
+div ul li a img{
+    height: 50px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 180%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .main-nav {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .images img {
+        flex: 1 1 50%;
+    }
+
+    .how-it-works .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.steps {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero p {
+        font-size: 150%;
+    }
+
+    .main-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .images img {
+        flex: 1 1 100%;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 340px;
+    }
 }
